@@ -8,6 +8,6 @@ Use like this:
 
     rpmdev-setuptree
     cd ~/rpmbuild
-    wget -SPECS/tidy.spec https://raw.githubusercontent.com/kordewiner/centos6-tidy/master/tidy.spec
+    wget --output-document SPECS/tidy.spec https://raw.githubusercontent.com/kordewiner/centos6-tidy/master/tidy.spec
     spectool --get-files --sourcedir SPECS/tidy.spec
-    rpmbuild --ba SPECS/tidy.spec
+    rpmbuild -ba SPECS/tidy.spec
